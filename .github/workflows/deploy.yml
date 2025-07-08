@@ -2,7 +2,7 @@ name: Deploy Astro Site
 
 on:
   push:
-    branches: [main] # Change to your default branch if different
+    branches: [main]  # Change to your default branch if different
 
 jobs:
   build:
@@ -29,5 +29,6 @@ jobs:
         if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Use your PAT stored in repo secrets, not the default GITHUB_TOKEN
+          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           publish_dir: ./dist
