@@ -1,5 +1,27 @@
+# Name of your project
 name = "rjmlaird-digital"
+
+# Compatibility date for Wrangler/Cloudflare runtime
 compatibility_date = "2025-09-13"
 
+# Optional: Account ID (find in Cloudflare dashboard > Workers & Pages > Overview)
+# account_id = "your-account-id"
+
+# Static site configuration
 [site]
-bucket = "./dist"
+bucket = "./dist"          # Path to Astro build output
+entry-point = "."          # Use current directory (Pages ignores this)
+
+# Optional: Environment settings for production/dev
+[env.production]
+# You can override build command or output if needed
+# build_command = "npm run build"
+# bucket = "./dist"
+
+[env.development]
+# Local dev overrides
+# build_command = "npm run dev"
+# bucket = "./dist"
+
+# Optional: Workers-style entry if you want SSR or APIs in the future
+# main = "workers-site/index.js"  # Only if you add a Worker
