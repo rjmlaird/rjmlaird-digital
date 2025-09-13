@@ -1,0 +1,40 @@
+{
+  "name": "rjmlaird-digital",
+  "version": "1.0.0",
+  "description": "Green Orbit Digital website – built with Astro and optimized for sustainable deployment.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "lint": "astro check",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjmlaird/rjmlaird-digital.git"
+  },
+  "keywords": [
+    "astro",
+    "green-orbit-digital",
+    "sustainable-marketing",
+    "space-industry"
+  ],
+  "author": "Ryan Laird <ryan@greenorbit.digital>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rjmlaird/rjmlaird-digital/issues"
+  },
+  "homepage": "https://github.com/rjmlaird/rjmlaird-digital#readme",
+  "dependencies": {
+    "astro": "^5.13.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.0"
+  },
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": ">=9.6.0"
+  }
+}
