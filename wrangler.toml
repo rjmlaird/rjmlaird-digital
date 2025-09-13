@@ -3,10 +3,3 @@ compatibility_date = "2025-09-13"
 
 [site]
 bucket = "./dist"
-entry-point = "."
-
-[build]
-command = "npm run build"
-
-[env.production]
-vars = { NODE_ENV = "production" }
